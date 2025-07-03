@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <div>
+      <h3>Image block</h3>
+      <img
+        src="./assets/trevi-fountain.jpg"
+        alt="Trevi Fountain"
+        title="Trevi Fountain"
+        width="400"
+      />
+    </div>
+    <br />
+    <div>
+      <h3>Picture block</h3>
+      <p>Resize the screen to see different pictures based on screen width.</p>
+      <picture>
+        <source
+          media="(min-width: 650px)"
+          srcset="./assets/alter-of-the-fatherland.jpg"
+          width="400"
+        />
+        <source
+          media="(min-width: 465px)"
+          srcset="./assets/the-colosseum.jpg"
+          width="400"
+        />
+        <img
+          src="./assets/duomo-di-milano.jpg"
+          width="400"
+          alt="Duomo di Milano"
+          title="Duomo di Milano"
+        />
+      </picture>
+    </div>
+    <br />
+    <div>
+      <h3>Video block</h3>
+      <video width="400" muted autoplay controls>
+        <source src="./assets/rome.mp4" type="video/mp4" />
+        <source src="./assets/towers.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <br />
+    <div>
+      <h3>YouTube video block</h3>
+      <iframe
+        width="400"
+        height="315"
+        src="https://www.youtube.com/embed/LNHBMFCzznE?si=jCs5ZCO7D_0ziWGf"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <br />
+    <div>
+      <h3>Map</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.1043585036473!2d44.50418952852443!3d40.17752272288015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcff47e83133%3A0x2afdb52d4dc88f6d!2s8%20Mesrop%20Mashtots%20Ave%2C%20Yerevan%200015!5e0!3m2!1sen!2sam!4v1751543981347!5m2!1sen!2sam"
+        width="400"
+        height="450"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </body>
+</html>
